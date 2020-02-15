@@ -11,7 +11,7 @@
 
 
 
-# Shartli operator
+                        # Shartli operator
 # num = input("What is your name?: ")
 # if num == "Shohruh":
 #     print("Salom ho'jayin\n")
@@ -34,5 +34,36 @@
 # A = "Ha Olma" if name == "Olma" else "Olma emas"
 # print(A)
 
-import random
-print(random.randrange(80,100))
+
+                            #Random
+# import random
+# print(random.randrange(80,100))
+
+
+                            #LOOPS
+# i = 0
+# while i < 10:
+#     print(i)
+#     i += 2
+# else: print("i 10 dan katta bo'la olmaydi")
+#
+# i = 2000
+# while i > 100:
+#     i /= 2
+#     print(i)
+
+# for x in range(6):
+#     print(x)
+
+# for j in "hello world":
+#     print(j * 2 , end='')
+# for i in "hello world":
+#     if i != 'w':
+#         break
+#     print(i*3, end='')
+
+                    #List
+a = [a + b for a in 'list' if a != 's' for b in 'soup' if b != 'u']
+print(a)
+
+
