@@ -62,8 +62,31 @@
 #         break
 #     print(i*3, end='')
 
-                    #List
-a = [a + b for a in 'list' if a != 's' for b in 'soup' if b != 'u']
-print(a)
+                                #List
+# a = [a + b for a in 'list' if a != 's' for b in 'soup' if b != 'u']
+# print(a)
+
+l = []
+
+l.append(23)   # element qo'shadi
+l.append(34)
+l.append('b')
+b = [47,68]
+l.extend(b)    # list elementlarini qo'shadi
+l.insert(1, 56)  # listning 1 chi elementiga 56 ni qo'yadi va list 1 taga suriladi
+l.remove(34)    # listdagi ko'rsatilgan elementni o'chiradi
+print(l)
+l.pop(2)        # listdagi elementning indexi bo'yicha o'chiradi , agar parametr ko'rsatilmasa oxirgi elementini o'chiradi
+print(l.index(56))   #ko'rsatilgan element nechinchi indexdaligini chiqaradi
+print(l.count(47))      # ko'rsatilgan elementning listdagi soni nechtaligini chiqaradi
+l.sort()        # sortirovka bo'yicha chiqaradi
+l.reverse()     # sortning teskarisiga chiqaradi
+l.clear()       # listning ichini polnisti tozalab tashlaydi
+
+
+print(l)
+
+
+
 
 
