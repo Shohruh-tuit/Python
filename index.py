@@ -102,15 +102,30 @@
 
 
                             # Tub sonni topish
-N = int(input('Введите N: '))
-for k in range(2, N + 1):
-    tub = True
-    for i in range(2, k):
-        if k % i == 0:
-            tub = False
-            break
-    if tub:
-        print('{} - tub son'.format(k))
+# N = int(input('Введите N: '))
+# for k in range(2, N + 1):
+#     tub = True
+#     for i in range(2, k):
+#         if k % i == 0:
+#             tub = False
+#             break
+#     if tub:
+#         print('{} - tub son'.format(k))
+
+
+                    #Touple (Kortej) Listdan farqi uni keyin o'zgartirib bo'lmaydi va kam joy egallaydi xotiradan
+
+a = (32, 56.56, 'b')
+b = [32, 56.56, 'b']
+
+print(a.__sizeof__())
+print(b.__sizeof__())
+
+a =('hello world', 'dwd', 34)
+print(a)
+
+
+
 
 
 
