@@ -115,14 +115,28 @@
 
                     #Touple (Kortej) Listdan farqi uni keyin o'zgartirib bo'lmaydi va kam joy egallaydi xotiradan
 
-a = (32, 56.56, 'b')
-b = [32, 56.56, 'b']
+# a = (32, 56.56, 'b')
+# b = [32, 56.56, 'b']
+#
+# print(a.__sizeof__())
+# print(b.__sizeof__())
+#
+# a =('hello world', 'dwd', 34)
+# print(a)
 
-print(a.__sizeof__())
-print(b.__sizeof__())
+# x = ("apple", "banana", "cherry")
+# y = list(x)
+# print(y)
+# y[1] = "kiwi"
+# x = tuple(y)
+#
+# print(x)
 
-a =('hello world', 'dwd', 34)
-print(a)
+# tuple = (32, 45, 'ls')
+# print(tuple.__len__())
+
+
+                                # dict -- slovar yoki obyekt
 
 
 
