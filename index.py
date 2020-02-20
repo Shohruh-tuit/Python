@@ -102,15 +102,16 @@
 
 
                             # Tub sonni topish
-# N = int(input('Введите N: '))
-# for k in range(2, N + 1):
-#     tub = True
-#     for i in range(2, k):
-#         if k % i == 0:
-#             tub = False
+
+# N = int(input("Nechchigacha bo'lgan tub sonlarni topmoqchisiz ? :"))
+# for i in range(2, N + 1):
+#     tubson = True
+#     for j in range(2, i):
+#         if i % j == 0:
+#             tubson = False
 #             break
-#     if tub:
-#         print('{} - tub son'.format(k))
+#     if tubson == True:
+#         print("{} - tub son".format(i))
 
 
                     #Touple (Kortej) Listdan farqi uni keyin o'zgartirib bo'lmaydi va kam joy egallaydi xotiradan
@@ -138,12 +139,21 @@
 
                                 # dict -- slovar yoki obyekt
 
+a = {'one' : 1, 'two' : 2}
+print(a['two'])
 
+b = dict([(2 , 3), (5, 6)])
+print(b)
 
+c = dict.fromkeys(['a', 'b'] , 1)
+print(c)
 
+d = {a : a ** 2 for a in range(10,20)}
+print(d)
 
+person = {'name' : {"first_name" : 'Shohruh', "last_name" : "Masharipov", "middle_name" : "Baxodirovich"},
+          'adress' : ["Tashkent", "Almazar", "Qora-qamish 1/2" ],
+          'phone' : {"mobile_phone" : "998909757651", "mobile_phone_2" : "998946160682"}
+          }
 
-
-
-
-
+print(person["name"]['middle_name'])
