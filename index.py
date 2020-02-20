@@ -157,3 +157,12 @@ person = {'name' : {"first_name" : 'Shohruh', "last_name" : "Masharipov", "middl
           }
 
 print(person["name"]['middle_name'])
+
+x = person.get("phone")
+print(x)
+
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+
+set1.union(set2)
+print(set1)
