@@ -139,30 +139,43 @@
 
                                 # dict -- slovar yoki obyekt
 
-a = {'one' : 1, 'two' : 2}
-print(a['two'])
+# a = {'one' : 1, 'two' : 2}
+# print(a['two'])
+#
+# b = dict([(2 , 3), (5, 6)])
+# print(b)
+#
+# c = dict.fromkeys(['a', 'b'] , 1)
+# print(c)
+#
+# d = {a : a ** 2 for a in range(10,20)}
+# print(d)
+#
+# person = {'name' : {"first_name" : 'Shohruh', "last_name" : "Masharipov", "middle_name" : "Baxodirovich"},
+#           'adress' : ["Tashkent", "Almazar", "Qora-qamish 1/2" ],
+#           'phone' : {"mobile_phone" : "998909757651", "mobile_phone_2" : "998946160682"}
+#           }
+#
+# print(person["name"]['middle_name'])
+#
+# x = person.get("phone")
+# print(x)
 
-b = dict([(2 , 3), (5, 6)])
-print(b)
 
-c = dict.fromkeys(['a', 'b'] , 1)
-print(c)
-
-d = {a : a ** 2 for a in range(10,20)}
-print(d)
-
-person = {'name' : {"first_name" : 'Shohruh', "last_name" : "Masharipov", "middle_name" : "Baxodirovich"},
-          'adress' : ["Tashkent", "Almazar", "Qora-qamish 1/2" ],
-          'phone' : {"mobile_phone" : "998909757651", "mobile_phone_2" : "998946160682"}
-          }
-
-print(person["name"]['middle_name'])
-
-x = person.get("phone")
-print(x)
+                                        # Set and frozenset
+#set bilan frozensetni farqi frozensetni o'zgartiirib bo'lmaydi
 
 set1 = {"a", "b", "c"}
 set2 = {1, 2, 3}
 
+print(type(set1))
+
 set1.union(set2)
 print(set1)
+
+a = ['r','s','w','a','s','w']
+print(a)
+s = set (a)
+print(s)
+
+
