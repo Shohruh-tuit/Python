@@ -178,4 +178,15 @@ print(a)
 s = set (a)
 print(s)
 
+a = {32, 43, 56, 74,48}
+x = {43, 12, 90, 32}
+print(a.isdisjoint(x))      #isdisjoint metodi agar 2 ta setni ichidagi elementlar ichida bittaham bir xili bo'lmasa True qaytaradi
+
+a.update(x)            #update funksiyasi 2 ta setda bor yo'gini olib bir biriga qoshadi borini qaytarmaydi
+print(a)
+
+a.intersection_update(x)    # updateni teskarisi faqat 2 tasida ham borini chiqaradi ekvivalent
+print(a)
+
+
 
