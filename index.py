@@ -165,28 +165,68 @@
                                         # Set and frozenset
 #set bilan frozensetni farqi frozensetni o'zgartiirib bo'lmaydi
 
-set1 = {"a", "b", "c"}
-set2 = {1, 2, 3}
+# set1 = {"a", "b", "c"}
+# set2 = {1, 2, 3}
+#
+# print(type(set1))
+#
+# set1.union(set2)
+# print(set1)
+#
+# a = ['r','s','w','a','s','w']
+# print(a)
+# s = set (a)
+# print(s)
+#
+# a = {32, 43, 56, 74,48}
+# x = {43, 12, 90, 32}
+# print(a.isdisjoint(x))      #isdisjoint metodi agar 2 ta setni ichidagi elementlar ichida bittaham bir xili bo'lmasa True qaytaradi
+#
+# a.update(x)            #update funksiyasi 2 ta setda bor yo'gini olib bir biriga qoshadi borini qaytarmaydi
+# print(a)
+#
+# a.intersection_update(x)    # updateni teskarisi faqat 2 tasida ham borini chiqaradi ekvivalent
+# print(a)
 
-print(type(set1))
-
-set1.union(set2)
-print(set1)
-
-a = ['r','s','w','a','s','w']
-print(a)
-s = set (a)
-print(s)
-
-a = {32, 43, 56, 74,48}
-x = {43, 12, 90, 32}
-print(a.isdisjoint(x))      #isdisjoint metodi agar 2 ta setni ichidagi elementlar ichida bittaham bir xili bo'lmasa True qaytaradi
-
-a.update(x)            #update funksiyasi 2 ta setda bor yo'gini olib bir biriga qoshadi borini qaytarmaydi
-print(a)
-
-a.intersection_update(x)    # updateni teskarisi faqat 2 tasida ham borini chiqaradi ekvivalent
-print(a)
 
 
+                                        # Functions (def,lambda, return)
+#
+# def Myfunctions(*a):
+#     if a[0].__len__()>a[1].__len__():
+#         print(a + "Salom")
+#     elif a[0].__len__()>a[1].__len__():
+#         print(a + "sizga ga salom yo'q")
+#     elif a[1].__len__()==a[0].__len__():
+#         print(a[2] + " qizlarga alohida salom!!!")
+# #
+#
+# Myfunctions("Shohruh","Baxodir","Malohat")
+#
+# def func (*fruits):
+#     print("Judayam shirin " + fruits[2])
+# func('Banan', 'peach', 'strawberry')
+# #
+#
+# def function(x):
+#     def add(a):
+#         return x + a
+#     return add
+#
+# test = function(100)
+# print(test(200))
 
+                                # Archa yulduzcha
+# N = int(input("Nechta qator: "))
+# for i in range(1, N + 1):
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     print()
+
+for row in range(6):
+    for column in range(7):
+        if (row == 0 and column % 3 != 0) or (row == 1 and column % 3 ==0 ) or (row - column == 2) or (row + column == 8):
+            print("*", end="")
+        else:
+            print(end=" ")
+    print()
