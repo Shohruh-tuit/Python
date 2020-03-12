@@ -45,13 +45,12 @@
 # while i < 10:
 #     print(i)
 #     i += 2
-# else: print("i 10 dan katta bo'la olmaydi")
 #
 # i = 2000
 # while i > 100:
 #     i /= 2
 #     print(i)
-
+#
 # for x in range(6):
 #     print(x)
 
@@ -206,7 +205,7 @@
 # def func (*fruits):
 #     print("Judayam shirin " + fruits[2])
 # func('Banan', 'peach', 'strawberry')
-# #
+#
 #
 # def function(x):
 #     def add(a):
@@ -223,10 +222,17 @@
 #         print("*", end=" ")
 #     print()
 
-for row in range(6):
-    for column in range(7):
-        if (row == 0 and column % 3 != 0) or (row == 1 and column % 3 ==0 ) or (row - column == 2) or (row + column == 8):
-            print("*", end="")
-        else:
-            print(end=" ")
-    print()
+                                #Heart Yulduzchalari
+# for row in range(6):
+#     for column in range(7):
+#         if (row == 0 and column % 3 != 0) or (row == 1 and column % 3 ==0 ) or (row - column == 2) or (row + column == 8):
+#             print("*", end="")
+#         else:
+#             print(end=" ")
+#     print()
+
+
+def Myfunctions(c):
+    print(c + 10)
+
+Myfunctions(10)
