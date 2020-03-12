@@ -214,7 +214,16 @@
 #
 # test = function(100)
 # print(test(200))
-
+#
+# def func(r, w, y=2):
+#     res = r + w
+#     res *= y
+#     return res
+# print(func(2,4,5))
+#
+def func(*args):      # parametrda * bilan kelsa nechta argument olishini farqi yoq, hohlaganicha oladi
+    return args
+print(func(1,3,4))
                                 # Archa yulduzcha
 # N = int(input("Nechta qator: "))
 # for i in range(1, N + 1):
@@ -230,9 +239,3 @@
 #         else:
 #             print(end=" ")
 #     print()
-
-
-def Myfunctions(c):
-    print(c + 10)
-
-Myfunctions(10)
