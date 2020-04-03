@@ -1,13 +1,13 @@
 
-# name = input("Как вас зовут?")
-# print("Привет" + name)
+# name = input("Как вас зовут? ")
+# print("Привет " + name)
 # num_1 = int(input("Enter first number: "))
 # num_2 = input("Enter first number: ")
 # res = num_1 + int(num_2)
-# Res = 'Shohruh'
+# print(res)
+# Res = 'Shohruh '
 # Res *= 5
 # print(Res)
-# print(res)
 
 
 
@@ -21,7 +21,7 @@
 
 
 # number = int(input("Enter number: "))
-
+#
 # if number > 0:
 #     print("Siz 0 dan katta son kiritdingiz!!!")
 #     if number > 10:
@@ -29,6 +29,16 @@
 #     else: print("Siz 10 dan kichik lekin 0 dan katta son kirtdingiz")
 # else:
 #     print("Siz 0 dan kichik son kiritdingiz")
+
+
+# number = int(input("Son kiriting: "))
+# little = str(number - 20)
+# big = str(20 - number)
+# if number > 20:
+#     print("Siz 20 dan " + little + " ta katta son kiritdingiz")
+# else:
+#     print("Siz 20 dan " + big + " ta kichkina son kiritdingiz" )
+
 
 # name = input("Mevaning ismini kiriting: ")
 # A = "Ha Olma" if name == "Olma" else "Olma emas"
@@ -221,9 +231,9 @@
 #     return res
 # print(func(2,4,5))
 #
-def func(*args):      # parametrda * bilan kelsa nechta argument olishini farqi yoq, hohlaganicha oladi
-    return args
-print(func(1,3,4))
+# def func(*args):      # parametrda * bilan kelsa nechta argument olishini farqi yoq, hohlaganicha oladi
+#     return args
+# print(func(1,3,4))
                                 # Archa yulduzcha
 # N = int(input("Nechta qator: "))
 # for i in range(1, N + 1):
@@ -239,5 +249,3 @@ print(func(1,3,4))
 #         else:
 #             print(end=" ")
 #     print()
-
-print("Shohruh")
