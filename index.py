@@ -258,21 +258,14 @@
 #     print()
 
 
-a = 25
-b = 43
+# a = int(input("Necha so'm: "))
+# b = int(input("Necha tiyin: "))
+# n = float(input("Necha Kg: "))
 
-c = a
-a = b
-b = c
+# c = n * ((a * 100) + b)
+# print(c // 100 , "so'm ", c % 100, "tiyin")
 
-print(a)
-print(b)
 
-a = 25
-b = 43
-a, b = b, a
-print(a)
-print(b)
-# fefe
-# fefef
-
+a = int(input("Son kiriting: "))
+natija = a % 10
+print(natija)
