@@ -206,47 +206,47 @@
 
                                         # Functions (def,lambda, return)
 
-def Myfunctions(*a):
-    if a[0].__len__() > a[1].__len__():
-        print(a + "Salom")
-    elif a[0].__len__() > a[1].__len__():
-        print(a + "sizga salom yo'q")
-    elif a[1].__len__() == a[0].__len__():
-        print(a[2] + " qizlarga alohida salom!!!")
-#
+# def Myfunctions(*a):
+#     if a[0].__len__() > a[1].__len__():
+#         print(a + "Salom")
+#     elif a[0].__len__() > a[1].__len__():
+#         print(a + "sizga salom yo'q")
+#     elif a[1].__len__() == a[0].__len__():
+#         print(a[2] + " qizlarga alohida salom!!!")
+# #
 
-Myfunctions("Shohruh","Baxodir","Malohat")
+# Myfunctions("Shohruh","Baxodir","Malohat")
 
-def func (*fruits):
-    print("Judayam shirin " + fruits[2])
-func('Banan', 'peach', 'strawberry')
+# def func (*fruits):
+#     print("Judayam shirin " + fruits[2])
+# func('Banan', 'peach', 'strawberry')
 
 
-def function(x):
-    def add(a):
-        return x + a
-    return add
+# def function(x):
+#     def add(a):
+#         return x + a
+#     return add
 
-test = function(100)
-print(test(200))
+# test = function(100)
+# print(test(200))
 
-def func(r, w, y=2):
-    res = r + w
-    res *= y
-    return res
-print(func(2,4,5))
+# def func(r, w, y=2):
+#     res = r + w
+#     res *= y
+#     return res
+# print(func(2,4,5))
 
-def func(*args):      # parametrda * bilan kelsa nechta argument olishini farqi yoq, hohlaganicha oladi
-    return args
-print(func(1,3,4))
+# def func(*args):      # parametrda * bilan kelsa nechta argument olishini farqi yoq, hohlaganicha oladi
+#     return args
+# print(func(1,3,4))
 
 
                                 # Archa yulduzcha
-N = int(input("Nechta qator: "))
-for i in range(1, N + 1):
-    for j in range(1, i + 1):
-        print("*", end=" ")
-    print()
+# N = int(input("Nechta qator: "))
+# for i in range(1, N + 1):
+#     for j in range(1, i + 1):
+#         print("*", end=' ')
+#     print()
 
                                 #Heart Yulduzchalari
 # for row in range(6):
@@ -256,3 +256,22 @@ for i in range(1, N + 1):
 #         else:
 #             print(end=" ")
 #     print()
+
+
+a = 25
+b = 43
+
+c = a
+a = b
+b = c
+
+print(a)
+print(b)
+
+a = 25
+b = 43
+a, b = b, a
+print(a)
+print(b)
+
+
