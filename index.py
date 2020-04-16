@@ -149,7 +149,7 @@
 # print(tuple.__len__())
 
 
-                                # dict -- slovar yoki obyekt
+                                # dict --  obyekt
 #
 # a = {'one' : 1, 'two' : 2}
 # print(a['two'])
@@ -212,7 +212,7 @@ def Myfunctions(*a):
     elif a[0].__len__() > a[1].__len__():
         print(a + "sizga salom yo'q")
     elif a[1].__len__() == a[0].__len__():
-        print(a[2] + " qizlarga alohida salom!!!")
+        print(a[2] + ", qizlarga alohida salom!!!")
 #
 
 Myfunctions("Shohruh","Baxodir","Malohat")
@@ -230,7 +230,7 @@ def function(x):
 test = function(100)
 print(test(200))
 
-def func(r, w, y=2):
+def func(r, w, y=7):
     res = r + w
     res *= y
     return res
