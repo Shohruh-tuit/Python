@@ -275,5 +275,11 @@
 
 
                                 # Files
-f = open('text.txt')
-print(f.read(5))
+f = open('text.txt', 'w' )
+# print(f.read(5))
+
+# for i in f:
+#     print(i) 
+
+f.write('Bu yana man\nikkinchi qator')
+f.close()
