@@ -149,7 +149,7 @@
 # print(tuple.__len__())
 
 
-                                # dict --  obyekt
+                                # dict -- slovar yoki obyekt
 #
 # a = {'one' : 1, 'two' : 2}
 # print(a['two'])
@@ -206,37 +206,74 @@
 
                                         # Functions (def,lambda, return)
 
-def Myfunctions(*a):
-    if a[0].__len__() > a[1].__len__():
-        print(a + "Salom")
-    elif a[0].__len__() > a[1].__len__():
-        print(a + "sizga salom yo'q")
-    elif a[1].__len__() == a[0].__len__():
-        print(a[2] + ", qizlarga alohida salom!!!")
-#
+# def Myfunctions(*a):
+#     if a[0].__len__() > a[1].__len__():
+#         print(a + "Salom")
+#     elif a[0].__len__() > a[1].__len__():
+#         print(a + "sizga salom yo'q")
+#     elif a[1].__len__() == a[0].__len__():
+#         print(a[2] + ", qizlarga alohida salom!!!")
+# #
 
-Myfunctions("Shohruh","Baxodir","Malohat")
+# Myfunctions("Shohruh","Baxodir","Malohat")
 
-def func (*fruits):
-    print("Judayam shirin " + fruits[2])
-func('Banan', 'peach', 'strawberry')
+# def func (*fruits):
+#     print("Judayam shirin " + fruits[2])
+# func('Banan', 'peach', 'strawberry')
 
 
-def function(x):
-    def add(a):
-        return x + a
-    return add
+# def function(x):
+#     def add(a):
+#         return x + a
+#     return add
 
-test = function(100)
-print(test(200))
+# test = function(100)
+# print(test(200))
 
-def func(r, w, y=7):
-    res = r + w
-    res *= y
-    return res
-print(func(2,4,5))
+# def func(r, w, y=7):
+#     res = r + w
+#     res *= y
+#     return res
+# print(func(2,4,5))
 
-def func(*args):      # parametrda * bilan kelsa nechta argument olishini farqi yoq, hohlaganicha oladi
-    return args
-print(func(1,3,4))
+# def func(*args):      # parametrda * bilan kelsa nechta argument olishini farqi yoq, hohlaganicha oladi
+#     return args
+# print(func(1,3,4))
 
+
+# def myfunc(**args):    # если будет 2 звездочки это возврашает обьекть
+#     return args
+# print(myfunc(a=5, b=3, c="dw"))
+
+
+# add = lambda x, y: x * y      # lambda  bitta qatorga yoziladigan funksiyaning bir turi
+# print(add(3, 4))
+# print(add('q', 4))
+
+# print((lambda x, y: x + y)(4, 7))
+
+# fun = lambda *args: args
+# print(fun(2, 56 , 76.45))
+
+
+                            # try - except 
+
+# x = int(input("Son kiriting"))
+# y = int(input("Son kiriting"))
+
+# try:
+#    res =  x / y                         # qlishga harakat qiladi
+# except ZeroDivisionError:                       # Xatolarni kutib oladi ya'ni xato nomi yoziladi 
+#     print("Siz 0 ga bo'ldingiz bu mumkin emas")
+#     res = 0
+# else:
+#     print("Siz to'gri kiritidingiz")       # Xato bo'lmasa ishlaydi
+# finally:
+#     print("Hammasi ishlayabdi 100%")           # Xato bo'lsin bo'lmasin har qanday vaziyatda ishlaydi
+# print(res)
+
+
+
+                                # Files
+f = open('text.txt')
+print(f.read(5))
