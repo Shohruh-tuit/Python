@@ -262,22 +262,22 @@
 # y = int(input("Son kiriting: "))
 
 # try:
-   res =  x / y                         # qlishga harakat qiladi
-except ZeroDivisionError:                       # Xatolarni kutib oladi ya'ni xato nomi yoziladi 
-    print("Siz 0 ga bo'ldingiz bu mumkin emas")
-    res = 0
-else:
-    print("Siz to'gri kiritidingiz")       # Xato bo'lmasa ishlaydi
-finally:
-    print("Hammasi ishlayabdi 100%")           # Xato bo'lsin bo'lmasin har qanday vaziyatda ishlaydi
-print(res)
+#    res =  x / y                         # qlishga harakat qiladi
+# except ZeroDivisionError:                       # Xatolarni kutib oladi ya'ni xato nomi yoziladi 
+#     print("Siz 0 ga bo'ldingiz bu mumkin emas")
+#     res = 0
+# else:
+#     print("Siz to'gri kiritidingiz")       # Xato bo'lmasa ishlaydi
+# finally:
+#     print("Hammasi ishlayabdi 100%")           # Xato bo'lsin bo'lmasin har qanday vaziyatda ishlaydi
+# print(res)
 
 
 
                                 # Files
-f = open('text.txt', 'r' )
+f = open('text.txt', 'r+',)   # agar r+ bo'lsa o'qish ham yozish ham mumkin
 
-print(f.read())         # to'liq fileni ichidagi yozuvni ekranga chiqaradi
+print(f.read( ))         # to'liq fileni ichidagi yozuvni ekranga chiqaradi
 
 # print(f.read(5))     # ichidagi parametr nechta harf chiqarishi yoki o'qishini bildiradi
 
@@ -287,4 +287,4 @@ print(f.read())         # to'liq fileni ichidagi yozuvni ekranga chiqaradi
 #     print(i)       # for qlib o'qib olish ujun rejim faqat 'r' ya'ni read bo'lishi kerak
 
 # f.write('Bu yana man\nikkinchi qator')
-# f.close()
+f.close()               # har doim fileni ochgandan so'ng uni yopish kerak
