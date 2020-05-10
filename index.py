@@ -262,15 +262,15 @@
 # y = int(input("Son kiriting: "))
 
 # try:
-#    res =  x / y                         # qlishga harakat qiladi
-# except ZeroDivisionError:                       # Xatolarni kutib oladi ya'ni xato nomi yoziladi 
-#     print("Siz 0 ga bo'ldingiz bu mumkin emas")
-#     res = 0
-# else:
-#     print("Siz to'gri kiritidingiz")       # Xato bo'lmasa ishlaydi
-# finally:
-#     print("Hammasi ishlayabdi 100%")           # Xato bo'lsin bo'lmasin har qanday vaziyatda ishlaydi
-# print(res)
+   res =  x / y                         # qlishga harakat qiladi
+except ZeroDivisionError:                       # Xatolarni kutib oladi ya'ni xato nomi yoziladi 
+    print("Siz 0 ga bo'ldingiz bu mumkin emas")
+    res = 0
+else:
+    print("Siz to'gri kiritidingiz")       # Xato bo'lmasa ishlaydi
+finally:
+    print("Hammasi ishlayabdi 100%")           # Xato bo'lsin bo'lmasin har qanday vaziyatda ishlaydi
+print(res)
 
 
 
