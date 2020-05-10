@@ -258,8 +258,8 @@
 
                             # try - except 
 
-# x = int(input("Son kiriting"))
-# y = int(input("Son kiriting"))
+# x = int(input("Son kiriting: "))
+# y = int(input("Son kiriting: "))
 
 # try:
 #    res =  x / y                         # qlishga harakat qiladi
@@ -275,11 +275,16 @@
 
 
                                 # Files
-f = open('text.txt', 'w' )
-# print(f.read(5))
+f = open('text.txt', 'r' )
+
+print(f.read())         # to'liq fileni ichidagi yozuvni ekranga chiqaradi
+
+# print(f.read(5))     # ichidagi parametr nechta harf chiqarishi yoki o'qishini bildiradi
+
+# print(f.readline())    # qatorri to'liq chiqaradi
 
 # for i in f:
-#     print(i) 
+#     print(i)       # for qlib o'qib olish ujun rejim faqat 'r' ya'ni read bo'lishi kerak
 
-f.write('Bu yana man\nikkinchi qator')
-f.close()
+# f.write('Bu yana man\nikkinchi qator')
+# f.close()
