@@ -275,9 +275,9 @@
 
 
                                 # Files
-f = open('text.txt', 'r+',)   # agar r+ bo'lsa o'qish ham yozish ham mumkin
+# f = open('text.txt', 'r+',)   # agar r+ bo'lsa o'qish ham yozish ham mumkin
 
-print(f.read( ))         # to'liq fileni ichidagi yozuvni ekranga chiqaradi
+# print(f.read( ))         # to'liq fileni ichidagi yozuvni ekranga chiqaradi
 
 # print(f.read(5))     # ichidagi parametr nechta harf chiqarishi yoki o'qishini bildiradi
 
@@ -287,4 +287,16 @@ print(f.read( ))         # to'liq fileni ichidagi yozuvni ekranga chiqaradi
 #     print(i)       # for qlib o'qib olish ujun rejim faqat 'r' ya'ni read bo'lishi kerak
 
 # f.write('Bu yana man\nikkinchi qator')
-f.close()               # har doim fileni ochgandan so'ng uni yopish kerak
+# f.close()               # har doim fileni ochgandan so'ng uni yopish kerak
+
+
+                                    
+                                    
+                                    
+                                    # Menedjer content with....as
+
+with open('test2.txt', 'wt', encoding='utf-8') as inFile:
+    num = int(input())
+    line = str('1/ ' + str(num) + ' = ' + str(1/ num))
+    print(line)
+    inFile.write(line)
