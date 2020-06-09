@@ -300,3 +300,22 @@ with open('test2.txt', 'wt', encoding='utf-8') as inFile:
     line = str('1/ ' + str(num) + ' = ' + str(1/ num))
     print(line)
     inFile.write(line)
+
+
+
+                                    # import module from....
+
+# import time
+# import sys
+# import random as r           #randomni r sifatida ishlatssa bo'ladi
+# from m import module as m           #papkani ichida bo'lsa from bilan topib olinadi
+# from module2 import plus as p, kopaytirish as k        # agar moduleni ichidagi bitta yoki bir nechta funkiyalarni ishlatmoqchi bo'lsak fromdan foydalaniladi
+# try:
+#     import nomodule
+# except ImportError:
+#     print("bunday module mavjud emas")
+
+# print(m.minus(5,3))
+# print(p(6,8))
+# print(r.randrange(0,10))
+# print(sys.platform)
