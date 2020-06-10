@@ -323,16 +323,71 @@
 
                                 # OOP python
 
-class Person:
-    name = "Shohruh"
-    age = 22
+# class Person:
+#     name = "Shohruh"
+#     age = 22
     
-    def set(self, name, age):
+#     def set(self, name, age):
+#         self.name = name
+#         self.age = age
+
+# David = Person()
+# David.set("David", 42)
+# print(David.name + " " + str(David.age)) 
+
+                                
+
+                                
+                                    # Nasl olish, inkapsulyatsiya, polimorfizm
+
+# class Person:
+#     name = "Shohruh"
+#     age = 22
+#     pol = 'male'
+    
+#     def set(self, name, age, pol):
+#         self.name = name
+#         self.age = age
+#         self.pol = pol
+
+# class Student (Person):
+#     course = 1
+
+# igor = Student()
+# igor.set("Igor", 19, 'male')
+# igor.course = 2
+# print(igor.age)
+
+# David = Person()
+# David.set("David", 42, 'female')
+# print(David.name + " " + str(David.age)) 
+
+
+# __set yoki _set bu inkapsulyatsiya
+
+
+
+                                    # Konstruktor
+
+class Person():
+    def __init__(self, name, age, pol):
         self.name = name
         self.age = age
+        self.pol = pol
 
-David = Person()
-David.set("David", 42)
-print(David.name + " " + str(David.age)) 
+    def set(self, name, age, pol):
+        self.name = name
+        self.age = age
+        self.pol = pol
 
+class Student (Person):
+    course = 1
 
+igor = Student("Igor", 19, 'male')
+# igor.set("Igor", 19, 'male')
+igor.course = 2
+print(igor.age)
+
+David = Person("David", 42, 'female')
+# David.set("David", 42, 'female')
+print(David.name + " " + str(David.age))
